@@ -20,7 +20,7 @@ spec:
           hostPort: 27017
         volumeMounts:
             - name: mongo-persistent-storage
-              mountPath: /data/db
+            mountPath: /data/db
 #In the above example, it is using a "gcePersistentDisk" to back the storage. This is only applicable if you are running your Kubernetes cluster in Google Cloud Platform.
 #For other storage options (iSCSI, NFS, OpenStack), please follow the documentation.
       volumes:
